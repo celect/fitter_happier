@@ -6,6 +6,6 @@ $LOAD_PATH << controller_path
 if defined?(ActiveSupport::Dependencies)
   ActiveSupport::Dependencies.load_paths << controller_path
 else
-  Dependencies.load_paths << controller_path
+  Dependencies.autoload_paths << controller_path
 end
 config.controller_paths << controller_path
